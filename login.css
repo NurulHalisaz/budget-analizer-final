@@ -1,0 +1,124 @@
+/*GLOBAL STYLING & WRAPPER*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%);
+}
+
+.auth-wrapper {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+/* TAB NAVIGATION*/
+.tab-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 25px; 
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.tab-button {
+    flex-grow: 1;
+    padding: 10px 0;
+    border: none;
+    background-color: transparent;
+    color: #555;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* Tombol Aktif menggunakan Gradien */
+.tab-button.active {
+    background: linear-gradient(to right, #9d50bb, #6e48aa); 
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; 
+}
+
+/*FORM STYLING*/
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form:not(.active-form) {
+    display: none;
+}
+
+.input-group {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/*OPTIONS & LINK*/
+.form-options {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.form-options a, .belum-punya-akun a {
+    color: #c94b4b; 
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.belum-punya-akun {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* GRADIENT BUTTON*/
+.gradient-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #e91e63, #ff69b4); 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+}
+
+.gradient-btn:hover {
+    opacity: 0.9;
+}
